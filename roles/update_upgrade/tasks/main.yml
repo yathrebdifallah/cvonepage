@@ -1,0 +1,9 @@
+---
+- name: Update package index
+  apt:
+    update_cache: yes
+
+- name: Upgrade system
+  apt:
+    upgrade: dist
+    autoremove: yes
